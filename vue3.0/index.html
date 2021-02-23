@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta content="一个最简单的示例" name="description">
+  <title>vue3.0</title>
+  <script src="https://unpkg.com/vue@3.0.0-alpha.8/dist/vue.global.js"></script>
+</head>
+
+<body>
+  <div id="app">
+    <div>
+      {{message}}
+    </div>
+    <div>
+      <button @click="increment"> Count is: {{ state.count }}, double is: {{ state.double }}</button>
+    </div>
+  </div>
+
+</body>
+<script>
+  const { createApp, reactive, computed, ref } = Vue;
+  const App = {
+    setup() {
+      const message = ref("hello vue");
+      const state = reactive({
+        count: 0,
+        double: computed(() => state.count * 2)
+      });
+      function increment() {
+        state.count++
+      };
+      return {
+        message,
+        state,
+        increment
+      }
+    }
+  }
+  createApp(App).mount('#app')
+</script>
+<!-- <script src="./Object.defineProperty.js"></script> -->
+
+
+</html>

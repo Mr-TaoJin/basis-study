@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .triangle {
+      width: 0;
+      height: 0;
+      border-left: 50px solid transparent;
+      border-right: 50px solid transparent;
+      border-bottom: 50px solid red;
+    }
+    .text{
+      -webkit-line-clamp: 3;
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="triangle"></div>
+
+  <div class="text">
+    <div>11111111111111111111111111111</div>
+    <div>11111111111111111111111111111</div>
+    <div>11111111111111111111111111111</div>
+    <div>11111111111111111111111111111</div>
+    <div>11111111111111111111111111111</div>
+    <div>11111111111111111111111111111</div>
+    <div>11111111111111111111111111111</div>
+  </div>
+  <!-- <h1 id="name">{{name}}</h1> -->
+</body>
+<!-- <script src="./prototype.js"></script> -->
+<!-- <script src="./promise.js"></script> -->
+<!-- <script src="./call.apply.js"></script> -->
+<!-- <script src="./charCodeAt.fromCharCode.js"></script> -->
+<!-- <script src="./ajax.js"></script> -->
+<!-- <script src="./object.defineProperty.js"></script> -->
+<script src="./interviewQuestions.js"></script>
+<!-- <script type="text/javascript">
+  var ele = document.querySelector('#name');
+  var selfVue = new SelfVue({
+      name: 'hello world'
+  }, ele, 'name');
+
+  window.setTimeout(function () {
+      console.log('name值改变了');
+      selfVue.data.name = 'canfoo';
+  }, 2000);
+
+</script> -->
+<!-- <script src="./algorithm.js"></script> -->
+<!-- <script>
+  function outside(){
+    let i = 0;
+    return function inside(){
+      return i++;
+    }
+  }
+  let fun = outside();
+  console.log(fun());
+  console.log(fun());
+  console.log(fun());
+  console.log(fun());
+  console.log(fun());
+  console.log(fun());
+</script> -->
+<script>
+  // var result = [];
+  // var a = 3;
+  // var total = 0;
+  // function foo(a) {
+  //   var i = 0;
+  //   for (; i < 3; i++) {
+  //     console.log(i,a,'1111');
+  //     result[i] = function () {
+  //       console.log(i,a,'2222');
+  //       total += i * a;
+  //       console.log(total);
+  //     }
+  //   }
+  // }
+  // foo(1);
+  // result[0]();
+  // result[1]();
+  // result[2]();
+</script>
+
+</html>
